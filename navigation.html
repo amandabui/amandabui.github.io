@@ -1,21 +1,12 @@
 <html>
     <head>
         <style>
-            /*ul {*/
-                /*list-style-type: none;*/
-                /*margin: 0;*/
-                /*padding: 0;*/
-                /*overflow: hidden;*/
-                /*background-color: white;*/
-                /*!*width: 200px;*!*/
-                /*!*background-color: #f1f1f1;*!*/
-                /*position: fixed;*/
-                /*top: 0;*/
-                /*width: 100%;*/
+            /*.hline-bottom {*/
+                /*padding-bottom: 10px;*/
+                /*border-bottom: 2px solid #000; !* whichever color you prefer *!*/
             /*}*/
-            .line a {
-                border-bottom: 1px solid black;
-            }
+
+
             .topnav a {
                 float: left;
                 color: #000;
@@ -40,7 +31,7 @@
 
             /* Display nav icon only when screen is 700px or less. */
             /* When the screen is less than7600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: 500px) {
                 .topnav a {display: none;}
                 .topnav a.icon {
                     float: right;
@@ -49,7 +40,7 @@
             }
 
             /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-            @media screen and (max-width: 700px) {
+            @media screen and (max-width: 500px) {
                 /* Keeps the nav icon in the same place when clicked. */
                 .topnav.responsive {position: relative;}
                 .topnav.responsive a.icon {
@@ -67,18 +58,16 @@
                 }
             }
 
+            .titleborder {
+                top: 80px;
+                border-top: 1px solid black;
+                margin: 10px;
+                text-align: center;
+            }
+
         </style>
     </head>
     <body>
-        <!--<ul>-->
-            <!--<li><a href="/">Home</a></li>-->
-            <!--<li><a href="/about/">About</a></li>-->
-            <!--<li><a href="/blog/">Blog</a></li>-->
-            <!--<li><a href="something_here">something here</a></li>-->
-        <!--</ul>-->
-        <!--<div class="topnav" id="myTopnav">-->
-            <!--<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>-->
-        <!--</div>-->
 
         <div class="topnav" id="myTopnav">
             <a href="/">Home</a>
@@ -98,6 +87,17 @@
                 }
             }
         </script>
+
+        <br>
+        <br/>
+        <div class="titleborder">
+            <h1> AMANDA BUI </h1>
+        </div>
+
+
+        <!--<p style="text-align:center;">-->
+        <!--<img src="https://vetstreet.brightspotcdn.com/dims4/default/90e9a21/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F8a%2F41ffe0a7e711e0a0d50050568d634f%2Ffile%2Fchow-3-645mk070111.jpg" alt="Cute picture cannot be loaded :(" style="width:600px;height:400px;">-->
+        <!--</p>-->
 
     </body>
 
