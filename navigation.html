@@ -1,32 +1,15 @@
 <html>
 <head>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="/style.css" charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css" charset="utf-8"/>
 
     <!--Used for sticky navigation bar-->
-    <script src="jquery.js"></script>
+    <!--<script src="jquery.js"></script>-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src = "C:\Programming\testStickynav\stickyNav.js" type = "text/javascript"></script>
+    <!--<script src = 'js/sticky_nav.js'> </script>-->
+
     <script>
-//        $(document).ready(function() {
-//
-//            var stickyOffset = $(".sticky").offset().top;
-//
-//            $(window).scroll(function() {
-//                var sticky = $(".sticky"),
-//                        scroll = $(window).scrollTop();
-//                if ($(window).width() > 600) {
-//                    if (scroll >= stickyOffset) {
-//                        sticky.addClass("fixed");
-//                        $(".content").css("padding-top", "78px");
-//                        $("#title").css("opacity", "1");
-//                    } else {
-//                        $(".content").css("padding-top", "0px");
-//                        $("#title").css("opacity", "0");
-//                        sticky.removeClass("fixed");
-//                    }
-//                }
-//            });
-//
-//        });
             $(document).ready(function() {
                 //change the integers below to match the height of your upper dive, which I called
                 //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
@@ -34,24 +17,40 @@
                 //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
                 //you know the position.
                 $(window).scroll(function () {
-
-//                    console.log($(window).scrollTop());
                     var topnav = $(".topnav");
-                    if ($(window).scrollTop() > 250) {
+                    var line = $(".line");
+                    if ($(window).scrollTop() > 200) {
                         topnav.addClass("fixed");
+                        line.addClass("fixed");
                     }
 
                     else {
                         topnav.removeClass("fixed");
+                        line.removeClass("fixed");
+
                     }
                 });
             });
+//        var navTop = $("nav").offset().top;
+//        var topnav = $(".topnav");
+//
+//        function stickyNav() {
+//
+//            var scroll = $(window).scrollTop();
+//            if (scroll >= 250){
+//                topnav.addClass("sticky");
+//            } else {
+//                topnav.removeClass("sticky");
+//            }
+//        };
+//
+//        stickyNav();
+//
+//        $(window).scroll(stickyNav);
     </script>
 </head>
 
 <body>
-    <!--<script src = 'js/sticky_nav.js'> </script>-->
-
     <div class="topnav" id="myTopnav">
         <a href="/">HOME</a>
         <a href="/about/">ABOUT</a>
@@ -82,12 +81,12 @@
         <h1> AMANDA BUI </h1>
     </div>
 
-    <!--<div>-->
+    <div>
 
-        <!--<p style="text-align:center;">-->
-            <!--<img src="assets/images/chowchow.jpg" alt="Cute picture cannot be loaded :(" style="width:100%;">-->
-        <!--</p>-->
-    <!--</div>-->
+        <p style="text-align:center;">
+            <img src="assets/images/chowchow.jpg" alt="Cute picture cannot be loaded :(" style="width:100%;">
+        </p>
+    </div>
 
 
 </body>
