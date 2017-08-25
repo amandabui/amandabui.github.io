@@ -1,20 +1,30 @@
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 0.5px solid lightgrey;
+    /*box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);*/
+    box-shadow: 0 2px 10px 0 rgb(249, 236, 249);
+
+
+}
+
 .topnav a {
     float: left;
     color: #000;
     /*width: 100%;*/
     /*position: fixed;*/
-    padding: 8px 16px;
+    padding: 15px 20px;
     text-decoration: none;
     text-align: center;
     background-color: white;
     font-size: 12px;
-    font-family: Georgia, serif;
-    margin-top: 10px;
+    /*font-family: sans-serif, "Century Gothic", CenturyGothic, sans-serif, Georgia, serif;*/
+    font-family: CenturyGothic;
 }
+
 
 /* Change the link color on hover */
 .topnav a:hover:not(.icon) {
-    /*background-color: #555;*/
     /*color: #2eb8b8;*/
     color: #91e0e0;
 }
@@ -22,11 +32,6 @@
 /* Don't display nav icon. */
 .topnav .icon {
     display: none;
-}
-
-.topnav-scrolled {
-    position: fixed;
-    width: 100%;
 }
 
 /* Display nav icon only when screen is 500px or less. */
@@ -58,16 +63,16 @@
     }
 }
 
-.line {
-    margin-top: 10px;
-    border-top: 1px solid darkgrey;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+/*.line {*/
+    /*!*margin-top: 10px;*!*/
+    /*border-bottom: 1px solid darkgrey;*/
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+/*}*/
 
 .titleborder {
-    top: 80px;
+    top: 100px;
     /*border-top: 1px solid darkgrey;*/
-    margin: 10px;
+    margin: 0px;
     text-align: center;
     font-family: "Times New Roman";
     font-size: 40px;
@@ -75,9 +80,9 @@
 
 .fixed {
     position: fixed;
-    top: 0;
-    right: 0;
-    width: calc(100% - 200px);
+    /*top: 0;*/
+    /*right: 0;*/
+    width: 100%;
 }
 
 .sticky {
@@ -112,3 +117,4 @@
     display: inline;
     margin: 10px 0 10px 40px;
     font-weight: 600; }
+

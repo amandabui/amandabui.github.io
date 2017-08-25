@@ -1,53 +1,15 @@
 <html>
 <head>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css" charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="/style.css" charset="utf-8"/>
+    <!--AMANDA FIX THIS AND PUT IN CSS FILE LOL -->
+    <style> body {margin:0;} </style>
 
     <!--Used for sticky navigation bar-->
-    <!--<script src="jquery.js"></script>-->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src = "C:\Programming\testStickynav\stickyNav.js" type = "text/javascript"></script>
-    <!--<script src = 'js/sticky_nav.js'> </script>-->
+    <script src = '/js/sticky_nav.js'> </script>
+    <script src = '/js/responsive_nav.js'> </script>
 
-    <script>
-            $(document).ready(function() {
-                //change the integers below to match the height of your upper dive, which I called
-                //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
-                //to figure out what the scroll position is when exactly you want to fix the nav
-                //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
-                //you know the position.
-                $(window).scroll(function () {
-                    var topnav = $(".topnav");
-                    var line = $(".line");
-                    if ($(window).scrollTop() > 200) {
-                        topnav.addClass("fixed");
-                        line.addClass("fixed");
-                    }
-
-                    else {
-                        topnav.removeClass("fixed");
-                        line.removeClass("fixed");
-
-                    }
-                });
-            });
-//        var navTop = $("nav").offset().top;
-//        var topnav = $(".topnav");
-//
-//        function stickyNav() {
-//
-//            var scroll = $(window).scrollTop();
-//            if (scroll >= 250){
-//                topnav.addClass("sticky");
-//            } else {
-//                topnav.removeClass("sticky");
-//            }
-//        };
-//
-//        stickyNav();
-//
-//        $(window).scroll(stickyNav);
-    </script>
 </head>
 
 <body>
@@ -59,23 +21,6 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
-
-    <br>
-    <br/>
-
-    <div class="line">
-    </div>
 
     <div class="titleborder">
         <h1> AMANDA BUI </h1>
