@@ -1,103 +1,94 @@
 <html>
 <head>
-    <style>
-        /*.hline-bottom {*/
-        /*padding-bottom: 10px;*/
-        /*border-bottom: 2px solid #000; !* whichever color you prefer *!*/
-        /*}*/
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" charset="utf-8"/>
 
+    <!--Used for sticky navigation bar-->
+    <script src="jquery.js"></script>
+    <script>
+//        $(document).ready(function() {
+//
+//            var stickyOffset = $(".sticky").offset().top;
+//
+//            $(window).scroll(function() {
+//                var sticky = $(".sticky"),
+//                        scroll = $(window).scrollTop();
+//                if ($(window).width() > 600) {
+//                    if (scroll >= stickyOffset) {
+//                        sticky.addClass("fixed");
+//                        $(".content").css("padding-top", "78px");
+//                        $("#title").css("opacity", "1");
+//                    } else {
+//                        $(".content").css("padding-top", "0px");
+//                        $("#title").css("opacity", "0");
+//                        sticky.removeClass("fixed");
+//                    }
+//                }
+//            });
+//
+//        });
+            $(document).ready(function() {
+                //change the integers below to match the height of your upper dive, which I called
+                //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
+                //to figure out what the scroll position is when exactly you want to fix the nav
+                //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
+                //you know the position.
+                $(window).scroll(function () {
 
-        .topnav a {
-            float: left;
-            color: #000;
-            /*width: 100%;*/
-            /*position: fixed;*/
-            padding: 8px 16px;
-            text-decoration: none;
-            text-align: center;
-            background-color: white;
-        }
+//                    console.log($(window).scrollTop());
+                    var topnav = $(".topnav");
+                    if ($(window).scrollTop() > 250) {
+                        topnav.addClass("fixed");
+                    }
 
-        /* Change the link color on hover */
-        .topnav a:hover:not(.icon) {
-            /*background-color: #555;*/
-            color: #2eb8b8;
-        }
-
-        /* Don't display nav icon. */
-        .topnav .icon {
-            display: none;
-        }
-
-        /* Display nav icon only when screen is 700px or less. */
-        /* When the screen is less than7600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
-        @media screen and (max-width: 500px) {
-            .topnav a {display: none;}
-            .topnav a.icon {
-                float: right;
-                display: block;
-            }
-        }
-
-        /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-        @media screen and (max-width: 500px) {
-            /* Keeps the nav icon in the same place when clicked. */
-            .topnav.responsive {position: relative;}
-            .topnav.responsive a.icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-            /* Dealing with the other links. */
-            .topnav.responsive a:not(.icon) {
-                float: none;
-                display: block;
-                text-align: left;
-                background-color: transparent;
-                /*background-color:rgba(0,0,0,0.2)*/
-            }
-        }
-
-        .titleborder {
-            top: 80px;
-            border-top: 1px solid black;
-            margin: 10px;
-            text-align: center;
-        }
-
-    </style>
+                    else {
+                        topnav.removeClass("fixed");
+                    }
+                });
+            });
+    </script>
 </head>
+
 <body>
+    <!--<script src = 'js/sticky_nav.js'> </script>-->
 
-<div class="topnav" id="myTopnav">
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-    <a href="something_here">something here</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+    <div class="topnav" id="myTopnav">
+        <a href="/">HOME</a>
+        <a href="/about/">ABOUT</a>
+        <a href="/blog/">BLOG</a>
+        <a href="something_here">SOMETHING</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
 
-<script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
-    }
-</script>
+    </script>
 
-<br>
-<br/>
-<div class="titleborder">
-    <h1> AMANDA BUI </h1>
-</div>
+    <br>
+    <br/>
 
+    <div class="line">
+    </div>
 
-<!--<p style="text-align:center;">-->
-<!--<img src="https://vetstreet.brightspotcdn.com/dims4/default/90e9a21/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F8a%2F41ffe0a7e711e0a0d50050568d634f%2Ffile%2Fchow-3-645mk070111.jpg" alt="Cute picture cannot be loaded :(" style="width:600px;height:400px;">-->
-<!--</p>-->
+    <div class="titleborder">
+        <h1> AMANDA BUI </h1>
+    </div>
+
+    <div>
+
+        <p style="text-align:center;">
+            <img src="assets/images/chowchow.jpg" alt="Cute picture cannot be loaded :(" style="width:100%;">
+        </p>
+    </div>
+
 
 </body>
 
