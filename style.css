@@ -1,11 +1,14 @@
+.navplaceholder {
+    height: 42px;
+}
 .topnav {
     overflow: hidden;
     background-color: white;
     border-bottom: 0.5px solid lightgrey;
     /*box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);*/
     box-shadow: 0 2px 10px 0 rgb(249, 236, 249);
-
-
+    height: 42px;
+    margin-bottom: -42px;
 }
 
 .topnav a {
@@ -70,7 +73,7 @@
 /*}*/
 
 .titleborder {
-    top: 100px;
+    /*padding: 110px 50px 50px;*/
     /*border-top: 1px solid darkgrey;*/
     margin: 0px;
     text-align: center;
