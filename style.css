@@ -5,6 +5,7 @@
 .topnav {
     overflow: hidden;
     background-color: white;
+    /*background-color: rgba(255, 255, 255, 0.8);*/
     border-bottom: 0.5px solid lightgrey;
     /*box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);*/
     box-shadow: 0 2px 10px 0 rgb(249, 236, 249);
@@ -28,7 +29,7 @@
 
 
 /* Change the link color on hover */
-.topnav a:hover:not(.icon) {
+.topnav a:hover:not(.icon):not(.header) {
     /*color: #2eb8b8;*/
     color: #91e0e0;
 }
@@ -38,20 +39,35 @@
     display: none;
 }
 
+.topnav .header {
+    display: none;
+}
+
 /* Display nav icon only when screen is 500px or less. */
 /* When the screen is less than 500 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     .topnav a {display: none;}
     .topnav a.icon {
         float: right;
         display: block;
     }
+    .topnav a.header {
+        float: none;
+        display: block;
+        color: #000;
+        font-family: "clementine sketch";
+    }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     /* Keeps the nav icon in the same place when clicked. */
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+        position: relative;
+        height: 174px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
     .topnav.responsive a.icon {
         position: absolute;
         right: 0;
@@ -59,6 +75,7 @@
     }
     /* Dealing with the other links. */
     .topnav.responsive a:not(.icon) {
+        /*margin-top: 42px;*/
         float: none;
         display: block;
         text-align: left;
@@ -76,7 +93,7 @@
 .nameheader {
     /*padding: 110px 50px 50px;*/
     /*border-top: 1px solid darkgrey;*/
-    margin-top: -20px;
+    margin-top: -40px;
     text-align: center;
     font-family: "Times New Roman";
     font-size: 40px;
