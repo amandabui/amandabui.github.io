@@ -144,6 +144,43 @@
     margin-bottom: -40px;
 }
 
+.sixtyonea {
+    text-align: center;
+    font-family: CenturyGothic;
+    font-size: 10px;
+    /*margin-bottom: -40px;*/
+}
+
+.sixtyonea ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sixtyonea li {
+    display: inline;
+}
+
+.sixtyonea a {
+    /*float: left;*/
+    color: #000;
+    /*width: 100%;*/
+    /*position: fixed;*/
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    font-size: 12px;
+    /*font-family: sans-serif, "Century Gothic", CenturyGothic, sans-serif, Georgia, serif;*/
+    font-family: CenturyGothic;
+}
+
+/* Change the link color on hover */
+.sixtyonea a:hover {
+    /*color: #2eb8b8;*/
+    color: #ffc1c5;
+}
+
 .fixed {
     position: fixed;
     /*top: 0;*/
