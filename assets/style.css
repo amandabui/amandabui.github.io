@@ -1,0 +1,111 @@
+:root {
+    --yellow: #E5D16A;
+}
+
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Violation";
+    src:
+            url("fonts/VIOLATIO.TTF");
+    font-family: "LearningCurve";
+    src:
+            url("fonts/LearningCurve.ttf")
+}
+
+#home-header {
+    /*max-width: 100%;*/
+    width: 100%;
+    /*min-height: 570px;*/
+    min-height:500px;
+    position: relative;
+    /*background-image: url("images/me.jpg");*/
+    /*background-size: contain;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+
+    /*width: 100%;*/
+}
+
+#banner-img {
+    /*background-image: url(images/chowchow.jpg);*/
+    width: 100%;
+    /*border:0;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    position:absolute;
+}
+
+
+.name-bg {
+    position: relative;
+    font-size: 11vw;
+    left: 53%;
+    /*transform: translateY(170%);*/
+    /*bottom: 8px;*/
+    /*left: 16px;*/
+    color: var(--yellow);
+    /*line-height:0.9;*/
+    font-family: Futura;
+    text-shadow: 3px 2px 8px #FFFFFF, 4px 4px 8px #000000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+}
+
+#name-box {
+    position: absolute;
+    max-width:100%;
+
+}
+
+.name {
+    font-size: 11vw;
+    color: var(--yellow);
+    /*line-height:0.9;*/
+    font-family: Futura;
+    text-shadow: 3px 2px 8px #FFFFFF, 4px 4px 8px #000000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transform: translate(10%, 230%);
+
+
+}
+
+
+
+#hello-box {
+    position:absolute;
+    max-width:100%;
+}
+
+
+#hello {
+    font-size: 6vw;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Violation, Futura;
+    line-height:0.5;
+    /*left: 10%;*/
+    /*top: 20%;*/
+    /*transform: translateY(-900%);*/
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transform: translate(80%, 1230%);
+
+}
+
+
+#bui {
+    font-size: 6vw;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Violation;
+    line-height:0.5;
+    transform: translateY(-500%);
+}
