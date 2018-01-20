@@ -1,15 +1,55 @@
-.navcontainer {
-    /*display: inline-block;*/
+/*.navcontainer {*/
+    /*!*position: absolute;*!*/
+    /*!*position: relative;*!*/
+    /*!*overflow: auto;*!*/
+    /*!*position: absolute;*!*/
+    /*!*max-width:100%;*!*/
+
+    /*width: 100%;*/
+    /*top:0;*/
+    /*bottom:0;*/
+    /*!*cursor: pointer;*!*/
+    /*!*background-color:rgba(0,0,0,0.2)*!*/
+    /*!*background-color:var(--yellow);*!*/
+    /*!*z-index:2;*!*/
+
+/*}*/
+
+.navbutton {
     position: absolute;
     max-width:100%;
     cursor: pointer;
-    /*transform: translateX(10%) translateY(200%);*/
-    /*transform: translate(1500%, 100%);*/
     top:3%;
     right:3%;
-
-
 }
+
+/*.navlinks {*/
+    /*position: absolute;*/
+/*}*/
+
+/*.navcontainer ul {*/
+    /*list-style-type: none;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.navcontainer a {*/
+    /*display: none;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*.navcontainer a.icon {*/
+    /*!*float: left;*!*/
+    /*font-size: 6vw;*/
+    /*float: left;*/
+    /*text-align: left;*/
+    /*display: block;*/
+    /*color: var(--yellow);*/
+/*}*/
+
+/*.navcontainer a:not(.icon) {*/
+    /*max-width:100%;*/
+/*}*/
 
 .bar1, .bar2, .bar3 {
     width: 5vw;
@@ -17,8 +57,6 @@
     background-color: var(--yellow);
     margin: 3px 0;
     transition: 0.4s;
-    /*transform: translateY(-1400%);*/
-    /*transform: translateY(-10000%);*/
 
 }
 
@@ -34,6 +72,37 @@
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+/*.change {*/
+    /*background-color: transparent;*/
+    /**/
+/*}*/
+/*.change a.icon {*/
+
+/*}*/
+
+/*.change .navcontainer {*/
+    /*width: 100%;*/
+    /*min-height:500px;*/
+    /*position: relative;*/
+    /*background-color:rgba(0,0,0,0.2)*/
+/*}*/
+
+/*.change {*/
+    /*background-color:rgba(0,0,0,0.2)*/
+
+/*}*/
+
+/*.change a {*/
+    /*!*margin-top: 42px;*!*/
+    /*float: left;*/
+    /*display: block;*/
+    /*!*text-align: right;*!*/
+    /*!*background-color: transparent;*!*/
+    /*!*padding: 5px 20px;*!*/
+    /*padding: 100% 100%;*/
+    /*width: 100%;*/
+    /*background-color:rgba(0,0,0,0.2);*/
+/*}*/
 /* Dealing with the other links. */
 /*.change a:not(.icon):not(.header) {*/
     /*!*margin-top: 42px;*!*/
@@ -44,3 +113,54 @@
     /*padding: 5px 20px;*/
     /*!*background-color:rgba(0,0,0,0.2)*!*/
 /*}*/
+
+
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

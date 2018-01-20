@@ -4,42 +4,72 @@
     <meta charset="UTF-8">
     <title>Amanda Bui</title>
     <link rel="stylesheet" href="assets/style.css" />
-    <link rel="stylesheet" href="assets/navbar.css" />
+    <link rel="stylesheet" href="assets/navbar.css">
+    <!--<link rel="stylesheet" href="assets/navbar.css" />-->
     <script src="assets/javascript/navbar.js"></script>
 
 </head>
 <body>
-<!--<div class="main-header" role="banner"></div>-->
 
+
+
+
+<!--HOMEPAGE HEADER-->
 <div id="home-header">
-    <!--<div role="banner">-->
-    <!--<img src="assets/images/me.jpg" alt="Banner Image"/>-->
 
     <img id="banner-img" src="assets/images/me.jpg" alt="Banner Image"/>
-    <!--</div>-->
-    <!--<div class="navcontainer" onclick="myFunction(this)">-->
-        <!--<div class="bar1"></div>-->
-        <!--<div class="bar2"></div>-->
-        <!--<div class="bar3"></div>-->
-        <!--&lt;!&ndash;<div class="change">&ndash;&gt;-->
-            <!--&lt;!&ndash;<ul>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li><a href="/" class="header">amanda bui</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li><a href="/" class="first">HOME</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li><a href="/about/">ABOUT</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li><a href="/blog/">BLOG</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li><a href="/cs61a/">CS61A</a></li>&ndash;&gt;-->
-            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--</div>-->
-
     <div id="name-box">
         <div class="name">amanda</div>
     </div>
     <div id = "hello-box">
             <div id = "hello"> Hi, I'm </div>
     </div>
+    <!--NAVBAR-->
+    <!--<div class="navcontainer" onclick="myFunction(this)">-->
+    <!--<div class="navcontainer" onclick="openNav()">-->
+
+        <!--<div class="navbutton">-->
+            <!--<div class="bar1"></div>-->
+            <!--<div class="bar2"></div>-->
+            <!--<div class="bar3"></div>-->
+        <!--</div>-->
+        <!--<div class="overlay">-->
+            <!--<ul>-->
+                <!--&lt;!&ndash;<li><a href="javascript:void(0);" class="icon" onclick="myFunction(this)">&#9776;</a></li>&ndash;&gt;-->
+                <!--<li><a href="" class="first">HOME</a></li>-->
+                <!--<li><a href="about/">ABOUT</a></li>-->
+                <!--<li><a href="blog/">BLOG</a></li>-->
+                <!--<li><a href="cs61a/">CS61A</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div onclick="openNav()">
+        <div class="navbutton">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+    <div>
+        <div id="navcontainer" class="overlay">
+            <div onclick="closeNav()">
+                <div class="navbutton change">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="overlay-content">
+                <a href="#">about</a>
+                <a href="#">blog</a>
+                <a href="cs61a/">cs61a</a>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 </body>
 </html>
+
